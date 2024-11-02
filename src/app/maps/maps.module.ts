@@ -9,13 +9,13 @@ import { FullScreenPageComponent } from './pages/full-screen-page/full-screen-pa
 import { MarkersPageComponent } from './pages/markers-page/markers-page.component';
 import { PropertiesPageComponent } from './pages/properties-page/properties-page.component';
 import { ZoomRangePageComponent } from './pages/zoom-range-page/zoom-range-page.component';
-import { SideMenuComponent } from './components/side-menu/side-menu.component';
+import { CounterAloneComponent } from "../alone/components/counter-alone/counter-alone.component";
+import { SideMenuComponent } from '../alone/components/side-menu/side-menu.component';
 
 
 @NgModule({
   declarations: [
     MiniMapComponent,
-    SideMenuComponent,
     MapsLayoutComponent,
     FullScreenPageComponent,
     MarkersPageComponent,
@@ -26,8 +26,8 @@ import { SideMenuComponent } from './components/side-menu/side-menu.component';
   imports: [
     CommonModule,
     MapsRoutingModule,
-
-
-  ]
+    CounterAloneComponent,
+    SideMenuComponent
+]
 })
 export class MapsModule { }
